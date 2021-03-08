@@ -9,6 +9,10 @@
             <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet" rel="stylesheet">
             <link rel='stylesheet' href="style.css"/>
             
+            <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
     </head>
     <body>
         <header>
@@ -220,7 +224,7 @@
                     <div class="game-warrior">
                         <img src="https://img.cdn.famobi.com/portal/html5games/images/tmp/MotoX3mPoolPartyTeaser.jpg?v=0.2-44994f02" />
                         <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
-                        <img class="footer-graphic" src="https://img.cdn.famobi.com/portal/html5games/images/tmp/MotoX3mPoolPartyTeaser.jpg?v=0.2-44994f02" />
+                       
                     </div>
 
                     <div class="posts-comments-box">
@@ -293,7 +297,7 @@
 
         <footer>
             <div class="flex">
-                <small>Copyright &copy; 2021 All rights reserved | This template is made with <span class="footer-heart">&#9829;</span> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.</small>
+                <small>Copyright &copy; 2021 All rights reserved | This template is made with <span class="footer-heart">&#9829;</span> by PiccoloPlayer</a>.</small>
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -318,7 +322,14 @@
             </div>
         </footer>
 
-        <script src="app.js"></script>    
+        <script src="app.js">
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+    let navMenu = document.getElementById('nav-menu-container');
+    navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+
+
+});
+        </script>    
     </body>
     
     
