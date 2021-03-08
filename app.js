@@ -1,3 +1,9 @@
+document.getElementById('nav-toggle').addEventListener('click', function () {
+    let navMenu = document.getElementById('nav-menu-container');
+    navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+    });
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyDmGBr3mpz5NPgJIY8ocfAyZNjLJ2eGZ4c",
     authDomain: "web-development-da6b2.firebaseapp.com",
@@ -7,6 +13,7 @@ var firebaseConfig = {
     appId: "1:97161082396:web:11d06ac8c1b21dc28c11d9",
     measurementId: "G-SH4MN5Q8SY"
   };
+  
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
